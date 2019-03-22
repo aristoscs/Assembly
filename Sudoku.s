@@ -4,7 +4,7 @@
 .data
 
 # Hard-coded one for testing the method.	
-sudoku:	.word	4, 0, 0, 0, 0, 0, 0, 0, 9
+sudoku:		.word	4, 0, 0, 0, 0, 0, 0, 0, 9
 		.word	0, 9, 1, 0, 0, 0, 2, 8, 0
 		.word	0, 0, 0, 0, 1, 0, 0, 0, 0
 		.word	0, 4, 0, 7, 0, 8, 0, 1, 0
