@@ -23,8 +23,8 @@ main:
 	
 	# solve(sudoku, row, col)
 	la 	$a0, sudoku
-	li  $a1, 0
-	li  $a2, 0
+	li  	$a1, 0
+	li  	$a2, 0
 	jal	solve
 	
 	# print(sudoku)
@@ -32,7 +32,7 @@ main:
 	jal print
 	
 	# Exit Program
-	li	$v0, 10
+	li  $v0, 10
 	syscall
 	
 # booolean solve(sudoku, row, col) -> parameters($a0, $a1, $a2), returns ($v0)	
@@ -134,7 +134,7 @@ solve:
 
 	# return true
 	li  $v0, 1
-	jr 	$ra
+	jr  $ra
 	
 # booolean canPlace(sudoku, row, col, num) -> parameters($a0, $a1, $a2, $a3) -> returns ($v0)
 canPlace:
@@ -238,7 +238,7 @@ print:
 	move $t9, $a0
 
 	# i = 0
-	li	 $t0, 0
+	li   $t0, 0
 	
 	# while (i != 9)
 	printFor1: beq  $t0, 9, printFor1Esc
